@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;700;900&family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Syne:wght@400;750;800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Michroma&family=Smooch+Sans:wght@100..900&family=Archivo+Black&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Abyo", "Syne", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-h1: "Orbitron", sans-serif;
+  --font-h2: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: #f1f1f1;
+    color: #181818;
+    overflow-x: hidden;
+  }
+  
+  h2 {
+    font-family: var(--font-h2);
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Custom styling override to achieve Syne display stretch typography */
+h1, #hero-massive-headline {
+  font-family: "Michroma", sans-serif !important;
+  font-size: 59px !important;
+  line-height: 57px !important;
+  margin-top: 53px !important;
+  padding-bottom: 11px !important;
+  font-weight: bold !important;
+  font-style: normal !important;
+  text-align: center !important;
+  text-decoration-line: none !important;
+  letter-spacing: normal !important;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  cursor: pointer;
+  transform-origin: center center !important;
+}
+
+#hero-massive-headline:hover {
+  color: #ffffff !important;
+  transform: scale(1.03) !important;
+  letter-spacing: normal !important;
+}
+
+/* Selector 2 - Apply exact focus CSS rules to first P inside hero subtext */
+#hero-subtext-container p:first-of-type {
+  font-weight: normal !important;
+  font-style: italic !important;
+  font-family: "Syne", sans-serif !important;
+  padding-bottom: 0px !important;
+  font-size: 16px !important;
+  line-height: 24.25px !important;
+}
+
+.font-display-stretch {
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
