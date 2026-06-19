@@ -52,9 +52,9 @@ export default function Hero({ onLearnMore }: HeroProps) {
             }}
             id="hero-mak-developers-mimic"
           >
-            {/* " WE ARE HERE TO DOMINATE " */}
+            {/* " DARE TO DOMINATE " */}
             <div className="flex select-none tracking-tight font-normal">
-              {'" MAK DEVELOPERS "'.split("").map((char, index) => {
+              {'" DARE TO DOMINATE "'.split("").map((char, index) => {
                 const isQuote = char === '"';
                 return (
                   <motion.span
