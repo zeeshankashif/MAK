@@ -33,7 +33,7 @@ export default function WhoWeAre() {
   return (
     <section 
       id="about" 
-      className="relative px-6 py-24 bg-[#f1f1f1] border-t border-[#e5e5e5] scroll-mt-20"
+      className="relative px-6 pt-12 pb-24 bg-[#f1f1f1] border-t border-[#e5e5e5] scroll-mt-20"
     >
       <div className="max-w-7xl mx-auto">
         

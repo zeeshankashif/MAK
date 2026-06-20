@@ -177,7 +177,7 @@ export default function MetricHub() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-6" id="audit-form">
               {/* Field: Name */}
               <div className="flex flex-col gap-1 relative">
-                <label className="font-sans text-[11px] text-white font-normal uppercase tracking-widest">01 Name</label>
+                <label className="font-sans text-[11px] font-black text-sm text-white uppercase tracking-widest">01 Name</label>
                 <input
                   type="text"
                   name="name"
@@ -195,7 +195,7 @@ export default function MetricHub() {
 
               {/* Field: Email */}
               <div className="flex flex-col gap-1 relative">
-                <label className="font-sans text-[11px] text-white font-normal uppercase tracking-widest">02 Enterprise Email</label>
+                <label className="font-sans text-[11px] font-black text-sm text-white uppercase tracking-widest">02 Enterprise Email</label>
                 <input
                   type="email"
                   name="email"
@@ -213,7 +213,7 @@ export default function MetricHub() {
 
               {/* Field: Phone Number */}
               <div className="flex flex-col gap-1 relative">
-                <label className="font-sans text-[11px] text-white font-normal uppercase tracking-widest">03 Secure Line</label>
+                <label className="font-sans text-[11px] font-black text-sm text-white uppercase tracking-widest">03 Secure Line</label>
                 <input
                   type="text"
                   name="phone"
@@ -231,7 +231,7 @@ export default function MetricHub() {
 
               {/* Field: Website */}
               <div className="flex flex-col gap-1 relative">
-                <label className="font-sans text-[11px] text-white font-normal uppercase tracking-widest">04 System Endpoints (URL)</label>
+                <label className="font-sans text-[11px] font-black text-sm text-white uppercase tracking-widest">04 System Endpoints (URL)</label>
                 <input
                   type="text"
                   name="website"

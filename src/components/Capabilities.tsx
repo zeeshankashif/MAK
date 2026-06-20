@@ -120,7 +120,7 @@ export default function Capabilities({ onCapabilityClick }: CapabilitiesProps) {
         {/* ========================================================================= */}
         {/* SEMANTIC ANCHOR 2: MARKETING SOLUTIONS SECTION */}
         {/* ========================================================================= */}
-        <div id="marketing" className="scroll-mt-24 mb-24">
+        <div id="marketing" className="scroll-mt-24">
           <div className="flex items-center gap-2 mb-3">
             <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">03 SYSTEM VIEW</span>
             <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
