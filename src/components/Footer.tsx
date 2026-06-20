@@ -14,7 +14,7 @@ export default function Footer({ onNavigate }: FooterProps) {
     <footer className="w-full bg-[#181818] text-white border-t border-zinc-805" id="foot-root">
       
       {/* 1. TRUST BANNER SEGMENT: "A PARTNER, NOT A VENDOR" & monochrome hover-able logos */}
-      <div className="border-b border-zinc-800 py-8 px-6" id="foot-trust-banner">
+      <div className="border-b border-zinc-800 py-8 px-6 bg-[#0e0e0e]" id="foot-trust-banner">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="font-sans font-black tracking-wider text-sm text-[#8A8A8A] uppercase">
             A PARTNER , <span className="text-white">NOT A VENDOR.</span>
@@ -51,11 +51,14 @@ export default function Footer({ onNavigate }: FooterProps) {
             MAK Developers operates globally at the convergence point of advanced technology compilation, data funnel conversions, and corporate branding frameworks.
           </p>
 
-          {/* Micro structural system node */}
-          <div className="mt-4 p-4 border border-zinc-800 bg-zinc-900/30 max-w-xs font-mono text-[9px] text-zinc-500 uppercase tracking-widest leading-normal">
-            IP EGRESS: STABLE - SHUNT SYS: LIVE
-            <br />
-            VERSION: 2026 MAK - PLATFORM: CLOUD RUN
+          {/* ROAS Highlight Segment */}
+          <div className="mt-4 p-5 border border-zinc-800 bg-[#0e0e0e] max-w-sm font-sans tracking-wide leading-relaxed">
+            <span className="font-sans text-[15px] text-[#94fa50] font-black mr-2 block mb-1">
+              6.7 AVERAGE ROAS
+            </span>
+            <span className="text-[11px] text-zinc-400 uppercase tracking-wider font-semibold block">
+              ACROSS OUR 100+ GLOBAL CLIENTS ON SEO, PPC & SOCIAL.
+            </span>
           </div>
         </div>
 

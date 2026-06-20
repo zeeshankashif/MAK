@@ -132,20 +132,23 @@ export default function Preloader({ onComplete }: PreloaderProps) {
                 className="flex flex-col items-center gap-4"
               >
                 {/* Tech logo symbol wireframe */}
-                <div className="relative w-16 h-16 border border-[#a3a3a3] flex items-center justify-center">
+                <div className="relative w-14 h-14 sm:w-16 sm:h-16 border border-[#a3a3a3] flex items-center justify-center">
                   {/* Subtle Neon Accents in core wireframe */}
                   <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF3333] -mt-1 -mr-1" />
                   <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#94fa50] -mb-1 -ml-1 animate-pulse" />
-                  <span className="font-mono text-zinc-300 text-sm tracking-wider font-semibold">
+                  <span className="font-mono text-zinc-300 text-xs sm:text-sm tracking-wider font-semibold">
                     MAK
                   </span>
                 </div>
-                <div className="flex flex-col items-center">
-                  <h1 className="font-sans text-white text-base tracking-[0.3em] font-medium uppercase">
+                <div className="flex flex-col items-center text-center px-4">
+                  <h1 
+                    className="text-white text-sm sm:text-lg tracking-[0.25em] sm:tracking-[0.35em] font-normal uppercase whitespace-nowrap"
+                    style={{ fontFamily: "'Orbitron', sans-serif" }}
+                  >
                     MAK DEVELOPERS
                   </h1>
-                  <span className="font-mono text-xs text-[#8A8A8A] tracking-[0.2em] mt-1">
-                    PRODUCTION REDESIGN v2026.1
+                  <span className="font-mono text-[9px] sm:text-xs text-[#8A8A8A] tracking-[0.18em] sm:tracking-[0.22em] mt-1.5 whitespace-nowrap">
+                    PRODUCTION REDESIGN TEAM
                   </span>
                 </div>
               </motion.div>

@@ -15,11 +15,11 @@ export default function Hero({ onLearnMore }: HeroProps) {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#181818] border-b border-[#e5e5e5]"
+      className="relative min-h-0 h-auto pt-24 pb-10 md:min-h-screen md:py-0 flex items-center justify-center overflow-hidden bg-[#181818] border-b border-[#e5e5e5]"
       style={{
         backgroundImage: `linear-gradient(rgba(24, 24, 24, 0.45), rgba(24, 24, 24, 0.75)), url(${imageUrl})`,
         backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundPosition: "calc(50% + 30px) top",
       }}
     >
       {/* Centered Minimal Content Block */}
@@ -42,51 +42,102 @@ export default function Hero({ onLearnMore }: HeroProps) {
             initial="hidden"
             animate="visible"
             variants={{
-              visible: { transition: { staggerChildren: 0.03 } }
+              hidden: { opacity: 0, y: 28 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { 
+                  duration: 1.0, 
+                  ease: [0.25, 1, 0.5, 1], 
+                  delay: 0.35,
+                  staggerChildren: 0.015,
+                  delayChildren: 0.5
+                } 
+              }
             }}
-            className="flex items-center justify-center flex-wrap gap-x-1"
+            className="flex items-center justify-center flex-wrap gap-x-1 text-[22px] sm:text-[32px] overflow-visible"
             style={{ 
               fontFamily: "'Smooch Sans', sans-serif",
-              fontSize: "32px",
               fontWeight: 400
             }}
             id="hero-mak-developers-mimic"
           >
-            {/* " DEVELOPE TO DOMINATE " */}
-            <div className="flex select-none tracking-tight font-normal">
-              {'" WE DEVELOPE TO DOMINATE "'.split("").map((char, index) => {
-                const isQuote = char === '"';
-                return (
-                  <motion.span
-                    key={`char-${index}`}
-                    variants={{
-                      hidden: { opacity: 0, y: 15, scale: 0.95 },
-                      visible: { 
-                        opacity: 1, 
-                        y: 0, 
-                        scale: 1,
-                        transition: { duration: 0.5, ease: [0.25, 1, 0.5, 1] }
-                      }
-                    }}
-                    whileHover={{ 
-                      scale: 1.12, 
-                      color: isQuote ? "#ffffff" : "#94fa50",
-                      y: -4,
-                      transition: { duration: 0.15, ease: "easeOut" } 
-                    }}
-                    className={`inline-block transition-colors duration-200 cursor-pointer font-normal ${
-                      isQuote ? "text-[#94fa50]" : "text-white"
-                    }`}
-                    style={{ 
-                      display: char === " " ? "inline" : "inline-block", 
-                      marginRight: char === " " ? "10px" : "1px",
-                      willChange: "transform, opacity"
-                    }}
-                  >
-                    {char === " " ? "\u00A0" : char}
-                  </motion.span>
-                );
-              })}
+            {/* " WE DEVELOPE TO DOMINATE " formatted by stable word chunks to prevent character-level truncation */}
+            <div className="flex flex-wrap justify-center select-none tracking-tight font-normal">
+              {[
+                { word: '"', isQuote: true },
+                { word: 'WE', isQuote: false },
+                { word: 'DEVELOPE', isQuote: false },
+                { word: 'TO', isQuote: false },
+                { word: 'DOMINATE', isQuote: false },
+                { word: '"', isQuote: true }
+              ].map((wordItem, wordIdx) => (
+                <motion.div 
+                  key={`word-${wordIdx}`} 
+                  variants={{
+                    hidden: {},
+                    visible: { transition: { staggerChildren: 0.015 } }
+                  }}
+                  className="inline-flex flex-nowrap mr-2 sm:mr-3"
+                >
+                  {wordItem.word.split("").map((char, charIdx) => {
+                    const isQuote = wordItem.isQuote;
+                    const index = wordIdx * 10 + charIdx;
+                    return (
+                      <motion.div
+                        key={`char-${index}`}
+                        style={{ 
+                          position: "relative",
+                          overflow: "hidden",
+                          display: "inline-block", 
+                          marginRight: "1px",
+                          willChange: "transform, opacity"
+                        }}
+                        variants={{
+                          hidden: { opacity: 0, y: 15, scale: 0.95 },
+                          visible: { 
+                            opacity: 1, 
+                            y: 0, 
+                            scale: 1,
+                            transition: { duration: 0.5, ease: [0.25, 1, 0.5, 1] }
+                          }
+                        }}
+                        whileHover="hover"
+                        className="h-[1.25em] cursor-pointer"
+                      >
+                        {/* Primary Text Layer (Slides Up Out of View) */}
+                        <motion.span
+                          variants={{
+                            hover: { y: "-100%", skewY: -6, opacity: 0 }
+                          }}
+                          transition={{ type: "spring", stiffness: 360, damping: 18 }}
+                          className={`inline-block font-normal transition-colors duration-150 ${
+                            isQuote ? "text-[#94fa50]" : "text-white"
+                          }`}
+                          style={{ transformOrigin: "top left" }}
+                        >
+                          {char}
+                        </motion.span>
+
+                        {/* Secondary Text Layer (Slides Up From Below Into View) */}
+                        <motion.span
+                          initial={{ y: "100%", opacity: 0 }}
+                          variants={{
+                            hover: { y: "0%", skewY: 0, opacity: 1 }
+                          }}
+                          transition={{ type: "spring", stiffness: 360, damping: 18 }}
+                          className={`absolute left-0 top-0 font-normal ${
+                            isQuote ? "text-white font-bold" : "text-[#94fa50] font-bold"
+                          }`}
+                          style={{ transformOrigin: "bottom left" }}
+                        >
+                          {char}
+                        </motion.span>
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
@@ -109,7 +160,7 @@ export default function Hero({ onLearnMore }: HeroProps) {
       </div>
 
       {/* Aesthetic bottom bar coordinates */}
-      <div className="absolute bottom-6 right-6 flex justify-between items-center z-10 font-sans text-[8px] text-[#8A8A8A] tracking-[0.2em] text-bold">
+      <div className="absolute bottom-6 right-6 hidden md:flex justify-between items-center z-10 font-sans text-[8px] text-[#8A8A8A] tracking-[0.2em] text-bold">
         <div>MAK DEV REV 2026 - SYSTEM ACTIVE</div>
       </div>
     </section>

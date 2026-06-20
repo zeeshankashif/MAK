@@ -136,53 +136,53 @@ const DIVISIONS_RECORDS = [
   {
     id: "DIV-RUNTIME.01",
     name: "CORE RUNTIME LAB",
-    metric: "14ms SPEED CAP",
-    objective: "THE COMPLETE ELIMINATION OF LATE BROWSER HYDRATION DELAYS",
-    techStack: "RUST, CONCURRENT RE-ACT, LOCAL COGNITIVE WASM SHIELDS",
-    systemStatus: "STABLE PROTOCOL: OPERATIONAL",
+    metric: "14ms RESPONSE",
+    objective: "Eliminate late hydration delays and maximize client-side execution efficiency.",
+    techStack: "Rust WASM, Concurrent React, Edge Workers",
+    systemStatus: "ACTIVE / OPTIMIZED",
     threads: [
-      "RUNTIME_THREAD_01: DYNAMIC CHUNKS MERGING NATIVE ENGINE",
-      "STATIC_PREHTML_02: OPTIMISTIC DOM ELEMENT CACHING PIPES",
-      "SECURITY_CORS_03: RATE-LIMIT INTEGRAL PRECLUSION CODES"
+      "Compile client-side bundles faster using optimized Rust modules.",
+      "Prevent browser page blocks with smart streaming hydration.",
+      "Reduce network latency using predictive edge-caching protocols."
     ]
   },
   {
     id: "DIV-TELEMETRY.02",
     name: "TELEMETRY PARSING LAB",
-    metric: "+242% DATABENT",
-    objective: "REAL-TIME FIRST-PARTY VISITOR METRIC MODEL ENCODINGS",
-    techStack: "TENSORFLOW INGEST, META CONVERSION APIS, EXPRESS STREAM",
-    systemStatus: "DESTRUCTION ENGINE: BYPASSING SAFARI SCRIPTS TRACKERS",
+    metric: "REAL-TIME STREAM",
+    objective: "Secure, first-party analytics engine with maximum data protection and accuracy.",
+    techStack: "TensorFlow, Direct Event Buses, Secure Streams",
+    systemStatus: "ACTIVE / VERIFIED",
     threads: [
-      "API_EVENT_LOOP_01: DIRECT HTTP PROTOCOL TELEMETRY RELAYS",
-      "COHORT_MODEL_02: SYSTEMATIC USER FUNNEL BOT EXCLUSIONS",
-      "SECURE_AUDIT_03: PERSISTENT INVENTORY MATRIX RECALIBRATING"
+      "Filter out automated bots and spam traffic in real-time.",
+      "Process event logs asynchronously without bottlenecking.",
+      "Maintain absolute GDPR data compliance and anonymization."
     ]
   },
   {
     id: "DIV-COMMERCE.03",
     name: "HEADLESS COMMERCE DEPOT",
-    metric: "0px LAYOUT DEF",
-    objective: "HIGH-CONVERSION CHECKOUT INTEGRATION GATEWAY PROTOCOLS",
-    techStack: "SHOPIFY HYDROGEN, DECOUPLED STRIPE CORE APIs, REDIS METRICS",
-    systemStatus: "MERCHANT TERMINAL: VERIFIED INTEGRATION",
+    metric: "SUB-120MS DEPOTS",
+    objective: "Deploy decoupled headless architectures for lightning-fast digital checkouts.",
+    techStack: "Shopify Hydrogen, Stripe API, Distributed Redis",
+    systemStatus: "ACTIVE / SAFELIKE",
     threads: [
-      "CHECKOUT_SPEED_01: SUB-120MS STRIPE PAYMENT RETRIEVAL GATEWAY",
-      "INVENTORY_REF_02: DYNAMIC SYNC TABLES DIRECT FROM ERP DEPOTS",
-      "REACTIVE_CART_03: CLIENT CACHED IMMUTABLE SYSTEM CHECKLISTS"
+      "Load custom checkout sequences instantly under 120ms.",
+      "Coordinate direct live payment streams securely with Stripe API.",
+      "Unify dynamic inventory databases from local warehouse depots."
     ]
   },
   {
     id: "DIV-GRAPHICS.04",
     name: "BRAND SYSTEM SYNDICATE",
     metric: "100% CONTRAST",
-    objective: "SWISS STYLE ARCHITECTURE AND HIGH-GRAVITY GRAPHICS",
-    techStack: "NEUE CORP GEOMETRY MODULES, VECTOR COMPACT CONVENTIONS",
-    systemStatus: "AESTHETIC CONTRAST SCORE: EXTREME SHARP",
+    objective: "Rigid graphic structures featuring clean Swiss grid systems and high contrast.",
+    techStack: "Neue Corp Geometry, Raw Typography Formulas",
+    systemStatus: "ACTIVE / RESPONSIVE",
     threads: [
-      "TYPO_PAIRINGS_01: NEUE HAAS GROTESK & MONOSPACE TECH SYMMETRY",
-      "LAYOUT_SHARP_02: RIGID 1PX BORDERS / ABSOLUTE ZERO SHADOWS",
-      "KINETIC_FLOW_03: SPLIT-SCREEN DIAGONAL SVG RELIABLE PRELOAD"
+      "Maximize layout clarity using sharp crisp borders and zero shadows.",
+      "Enforce comfortable dark-and-light contrasting typography system.",
+      "Deliver lightweight vector graphics and fluid UI performance."
     ]
   }
 ];
@@ -201,7 +201,7 @@ function DivisionMatrix() {
             <button
               key={div.id}
               onClick={() => setActiveDivIdx(idx)}
-              className={`w-full p-6 text-left border cursor-pointer transition-all duration-300 relative ${
+              className={`w-full p-5 text-left border cursor-pointer transition-all duration-300 relative ${
                 isSelected
                   ? "bg-[#181818] border-black text-white"
                   : "bg-white border-[#e5e5e5] text-[#181818] hover:bg-zinc-50 hover:border-zinc-400"
@@ -212,15 +212,15 @@ function DivisionMatrix() {
                 <span className={`font-mono text-[9px] font-bold ${isSelected ? "text-[#94fa50]" : "text-[#94fa50]/70"}`}>
                   {div.id}
                 </span>
-                <span className={`font-mono text-[9px] font-bold tracking-widest ${isSelected ? "text-[#94fa50] bg-[#94fa50]/10 px-2 py-0.5 border border-[#94fa50]/20" : "text-[#8A8A8A]"}`}>
+                <span className={`font-mono text-[9px] font-bold tracking-widest ${isSelected ? "text-[#94fa50] bg-[#94fa50]/10 px-2.5 py-0.5 border border-[#94fa50]/20" : "text-[#8A8A8A]"}`}>
                   {div.metric}
                 </span>
               </div>
-              <h4 className="font-sans text-md font-black tracking-tight uppercase">
+              <h4 className="font-sans text-sm sm:text-md font-black tracking-tight uppercase">
                 {div.name}
               </h4>
               {isSelected && (
-                <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#94fa50]" />
+                <span className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#94fa50]" />
               )}
             </button>
           );
@@ -228,37 +228,37 @@ function DivisionMatrix() {
       </div>
 
       {/* Details Display terminal screen */}
-      <div className="lg:col-span-7 bg-[#181818] text-white p-8 border-2 border-black flex flex-col justify-between min-h-[380px] relative font-mono text-xs">
+      <div className="lg:col-span-7 bg-[#181818] text-white p-6 sm:p-8 border-2 border-black flex flex-col justify-between min-h-[400px] relative font-mono text-xs">
         <span className="absolute top-0 right-0 bg-[#94fa50] text-[#181818] font-mono text-[9px] py-1 px-3 tracking-widest font-black">
-          RECORD FILE: {activeDiv.id}
+          FILE: {activeDiv.id}
         </span>
         <span className="absolute bottom-0 right-0 w-3 h-3 bg-[#94fa50]" />
 
-        <div>
-          <div className="border-b border-zinc-800 pb-4 mb-6">
-            <span className="text-zinc-500 uppercase tracking-wider block text-[10px] font-bold">CORE DIV OBJECTIVE</span>
-            <span className="text-[#94fa50] font-bold uppercase tracking-wide text-sm mt-1">{activeDiv.objective}</span>
+        <div className="flex flex-col gap-6">
+          <div>
+            <span className="text-zinc-500 uppercase tracking-widest block text-[9px] font-bold mb-1.5">01 // CORE MISSION & OBJECTIVE</span>
+            <span className="text-[#94fa50] font-black uppercase tracking-wide text-sm sm:text-base leading-relaxed">{activeDiv.objective}</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 uppercase text-[11px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-b border-zinc-900 py-4 uppercase text-[11px]">
             <div>
-              <span className="text-zinc-500 block text-[9px] font-bold">INTEGRATED TECH STACK</span>
-              <span className="text-white font-semibold">{activeDiv.techStack}</span>
+              <span className="text-zinc-500 block text-[9px] font-bold mb-1">INTEGRATED TOOLS</span>
+              <span className="text-white font-semibold block">{activeDiv.techStack}</span>
             </div>
             <div>
-              <span className="text-zinc-500 block text-[9px] font-bold">INGESTION INTEGRITY STATUS</span>
-              <span className="text-[#FF3333] font-bold">{activeDiv.systemStatus}</span>
+              <span className="text-zinc-500 block text-[9px] font-bold mb-1">INTEGRITY STATUS</span>
+              <span className="text-[#94fa50] font-bold block">● {activeDiv.systemStatus}</span>
             </div>
           </div>
 
           {/* Sub threads logs */}
-          <div className="mt-6">
-            <span className="text-zinc-500 block text-[9px] uppercase tracking-wider mb-3 font-bold">STABLE SYSTEM THREAD LOGS</span>
-            <div className="space-y-2 bg-[#212121]/50 border border-zinc-800/80 p-4 font-mono text-[10px] text-zinc-300">
+          <div>
+            <span className="text-zinc-500 block text-[9px] uppercase tracking-widest mb-3 font-bold">02 // STABLE MODULE WORKFLOWS</span>
+            <div className="space-y-3 bg-[#1d1d1d] border border-zinc-900 p-4 font-mono text-[11px] leading-relaxed text-zinc-300">
               {activeDiv.threads.map((thread, index) => (
-                <div key={index} className="flex items-start gap-2.5">
-                  <span className="text-[#94fa50] font-black">&gt;&gt;</span>
-                  <span className="uppercase">{thread}</span>
+                <div key={index} className="flex items-start gap-3">
+                  <span className="text-[#94fa50] font-black select-none">&gt;</span>
+                  <span className="uppercase tracking-tight">{thread}</span>
                 </div>
               ))}
             </div>
@@ -266,9 +266,9 @@ function DivisionMatrix() {
         </div>
 
         {/* Micro coordinate status footer of terminal */}
-        <div className="border-t border-zinc-800 pt-4 mt-8 flex items-center justify-between text-[9px] text-zinc-500 uppercase">
-          <span>COORDINATE THREAD: COMPLETE</span>
-          <span className="text-[#94fa50] font-bold">STATION REFERENCE: MAK ZEXAN ENGINE - OK</span>
+        <div className="border-t border-zinc-950 pt-4 mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[9px] text-zinc-500 uppercase font-bold tracking-wider">
+          <span>COORDINATE THREAD: COMPILED SUCCESSFULLY</span>
+          <span className="text-[#94fa50]">STATION: MAK PLATFORM</span>
         </div>
       </div>
     </div>

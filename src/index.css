@@ -43,7 +43,7 @@
 }
 
 /* Custom styling override to achieve Syne display stretch typography */
-h1, #hero-massive-headline {
+#hero-massive-headline {
   font-family: "Michroma", sans-serif !important;
   font-size: 59px !important;
   line-height: 57px !important;
@@ -63,6 +63,20 @@ h1, #hero-massive-headline {
   cursor: pointer;
   transform-origin: center center !important;
   will-change: transform, letter-spacing, color, padding, margin;
+}
+
+@media (max-width: 768px) {
+  #hero-massive-headline {
+    font-size: 42px !important;
+    line-height: 52px !important;
+    margin-top: 26px !important;
+    padding-bottom: 14px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    letter-spacing: -0.01em !important;
+  }
 }
 
 #hero-massive-headline:hover {
@@ -85,3 +99,9 @@ h1, #hero-massive-headline {
   letter-spacing: -0.04em;
   font-weight: 800;
 }
+
+#hero-primary-btn {
+  padding-bottom: 16px !important;
+  margin-bottom: 15px !important;
+}
+
