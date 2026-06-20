@@ -47,22 +47,27 @@ h1, #hero-massive-headline {
   font-family: "Michroma", sans-serif !important;
   font-size: 59px !important;
   line-height: 57px !important;
-  margin-top: 53px !important;
+  margin-top: 55px !important;
+  margin-left: -50px !important;
+  margin-right: -50px !important;
+  padding-top: 0px !important;
   padding-bottom: 11px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
   font-weight: bold !important;
   font-style: normal !important;
   text-align: center !important;
   text-decoration-line: none !important;
   letter-spacing: normal !important;
-  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
   cursor: pointer;
   transform-origin: center center !important;
+  will-change: transform, letter-spacing, color, padding, margin;
 }
 
 #hero-massive-headline:hover {
-  color: #ffffff !important;
-  transform: scale(1.03) !important;
-  letter-spacing: normal !important;
+  color: #94fa50 !important;
+  transform: scale(1.02) translateY(-4px) !important;
 }
 
 /* Selector 2 - Apply exact focus CSS rules to first P inside hero subtext */

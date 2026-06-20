@@ -344,7 +344,7 @@ export default function ExtendedData() {
                           </p>
                           <div className="flex items-center gap-3 font-mono text-[9px] text-[#FF3333] tracking-widest font-bold">
                             <GitBranch size={10} />
-                            STATION_COORD // METRIC: 100% STABLE INTEGRITY
+                            STATION_COORD - METRIC: 100% STABLE INTEGRITY
                           </div>
                         </div>
                       </motion.div>

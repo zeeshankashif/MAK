@@ -53,9 +53,9 @@ export default function Footer({ onNavigate }: FooterProps) {
 
           {/* Micro structural system node */}
           <div className="mt-4 p-4 border border-zinc-800 bg-zinc-900/30 max-w-xs font-mono text-[9px] text-zinc-500 uppercase tracking-widest leading-normal">
-            IP_EGRESS: STABLE // SHUNT_SYS: LIVE
+            IP_EGRESS: STABLE - SHUNT_SYS: LIVE
             <br />
-            VERSION: 2026.06.MAK // PLATFORM: CLOUD_RUN
+            VERSION: 2026.06.MAK - PLATFORM: CLOUD_RUN
           </div>
         </div>
 

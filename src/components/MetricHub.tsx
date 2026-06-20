@@ -99,7 +99,7 @@ export default function MetricHub() {
             <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#181818]" />
 
             <div className="font-mono text-xs text-[#181818] tracking-[0.25em] mb-4 uppercase">
-              // AUDITED CONVERSION INCREASE
+              AUDITED CONVERSION INCREASE
             </div>
             <div className="text-5xl sm:text-7xl font-sans font-black tracking-tighter leading-none text-[#181818] uppercase">
               95%

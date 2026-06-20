@@ -209,7 +209,7 @@ function DivisionMatrix() {
               id={`div-selector-btn-${idx}`}
             >
               <div className="flex items-center justify-between mb-2">
-                <span className={`font-mono text-[9px] font-bold ${isSelected ? "text-[#94fa50]" : "text-[#FF3333]"}`}>
+                <span className={`font-mono text-[9px] font-bold ${isSelected ? "text-[#94fa50]" : "text-[#94fa50]/70"}`}>
                   {div.id}
                 </span>
                 <span className={`font-mono text-[9px] font-bold tracking-widest ${isSelected ? "text-[#94fa50] bg-[#94fa50]/10 px-2 py-0.5 border border-[#94fa50]/20" : "text-[#8A8A8A]"}`}>
@@ -232,28 +232,28 @@ function DivisionMatrix() {
         <span className="absolute top-0 right-0 bg-[#94fa50] text-[#181818] font-mono text-[9px] py-1 px-3 tracking-widest font-black">
           RECORD_FILE: {activeDiv.id}
         </span>
-        <span className="absolute bottom-0 right-0 w-3 h-3 bg-[#FF3333]" />
+        <span className="absolute bottom-0 right-0 w-3 h-3 bg-[#94fa50]" />
 
         <div>
           <div className="border-b border-zinc-800 pb-4 mb-6">
-            <span className="text-zinc-500 uppercase tracking-wider block text-[10px] font-bold">// CORE DIV OBJECTIVE</span>
+            <span className="text-zinc-500 uppercase tracking-wider block text-[10px] font-bold">CORE DIV OBJECTIVE</span>
             <span className="text-[#94fa50] font-bold uppercase tracking-wide text-sm mt-1">{activeDiv.objective}</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 uppercase text-[11px]">
             <div>
-              <span className="text-zinc-500 block text-[9px] font-bold">// INTEGRATED TECH STACK</span>
+              <span className="text-zinc-500 block text-[9px] font-bold">INTEGRATED TECH STACK</span>
               <span className="text-white font-semibold">{activeDiv.techStack}</span>
             </div>
             <div>
-              <span className="text-zinc-500 block text-[9px] font-bold">// INGESTION INTEGRITY STATUS</span>
+              <span className="text-zinc-500 block text-[9px] font-bold">INGESTION INTEGRITY STATUS</span>
               <span className="text-[#FF3333] font-bold">{activeDiv.systemStatus}</span>
             </div>
           </div>
 
           {/* Sub threads logs */}
           <div className="mt-6">
-            <span className="text-zinc-500 block text-[9px] uppercase tracking-wider mb-3 font-bold">// STABLE SYSTEM THREAD LOGS</span>
+            <span className="text-zinc-500 block text-[9px] uppercase tracking-wider mb-3 font-bold">STABLE SYSTEM THREAD LOGS</span>
             <div className="space-y-2 bg-[#212121]/50 border border-zinc-800/80 p-4 font-mono text-[10px] text-zinc-300">
               {activeDiv.threads.map((thread, index) => (
                 <div key={index} className="flex items-start gap-2.5">
@@ -268,7 +268,7 @@ function DivisionMatrix() {
         {/* Micro coordinate status footer of terminal */}
         <div className="border-t border-zinc-800 pt-4 mt-8 flex items-center justify-between text-[9px] text-zinc-500 uppercase">
           <span>COORDINATE_THREAD: COMPLETE</span>
-          <span className="text-[#94fa50] font-bold">STATION REFERENCE: MAK_ZEXAN_ENGINE // OK</span>
+          <span className="text-[#94fa50] font-bold">STATION REFERENCE: MAK_ZEXAN_ENGINE - OK</span>
         </div>
       </div>
     </div>

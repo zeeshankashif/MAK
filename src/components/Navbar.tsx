@@ -29,8 +29,8 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
 
   const links = [
     { name: "HOME", id: "home" },
-    { name: "MARKETING SOLUTIONS", id: "marketing" },
     { name: "DEVELOPMENT SERVICES", id: "development" },
+    { name: "MARKETING SOLUTIONS", id: "marketing" },
     { name: "WHO WE ARE", id: "about" },
     { name: "CONTACT", id: "contact" }
   ];

@@ -52,9 +52,9 @@ export default function Hero({ onLearnMore }: HeroProps) {
             }}
             id="hero-mak-developers-mimic"
           >
-            {/* " DARE TO DOMINATE " */}
+            {/* " DEVELOPE TO DOMINATE " */}
             <div className="flex select-none tracking-tight font-normal">
-              {'" DARE TO DOMINATE "'.split("").map((char, index) => {
+              {'" DEVELOPE TO DOMINATE "'.split("").map((char, index) => {
                 const isQuote = char === '"';
                 return (
                   <motion.span
@@ -111,7 +111,7 @@ export default function Hero({ onLearnMore }: HeroProps) {
       {/* Aesthetic bottom bar coordinates */}
       <div className="absolute bottom-6 left-6 right-6 flex justify-between items-center z-10 font-mono text-[9px] text-[#8A8A8A] tracking-[0.2em]">
         <div>COORDINATES: 40.7128° N, 74.0060° W</div>
-        <div>MAK_DEV_REV_2026 // SYSTEM_ACTIVE</div>
+        <div>MAK_DEV_REV_2026 - SYSTEM_ACTIVE</div>
       </div>
     </section>
   );

@@ -11,31 +11,31 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      year: "2018 // INITIALIZE",
+      year: "2018 - INITIALIZE",
       title: "DEPOT FOUNDATION",
       desc: "MAK Developers established by an elite unit of software engineers dedicated entirely to high-performance local compilation and concurrent rendering.",
       status: "COMPILING_SUCCESS"
     },
     {
-      year: "2020 // EXPAND",
+      year: "2020 - EXPAND",
       title: "TELEMETRY ENGINE ALPHA",
       desc: "Release of custom server-side data parsers. Enabled multi-channel tracking that operates completely independent of standard tracking blocker protocols.",
       status: "TELEMETRY_LIVE"
     },
     {
-      year: "2022 // RECONSTRUCT",
+      year: "2022 - RECONSTRUCT",
       title: "THE ZEXAN STANDARD",
       desc: "Eradicated all drop-shadow assets and rounded component coordinates across our entire portfolio. Formulated strict 0px rectangular layout boundaries.",
       status: "STANDARD_LOCKED"
     },
     {
-      year: "2024 // COMMAND",
+      year: "2024 - COMMAND",
       title: "HEADLESS MONOPOLY",
       desc: "Integrated native Shopify Hydrogen checkout proxies. Brought client-paint indexes to record latency threshold level below sub-14ms.",
       status: "EDGE_ACTIVE"
     },
     {
-      year: "2026 // DOMINANCE",
+      year: "2026 - DOMINANCE",
       title: "AI AGENT INTEGRATION",
       desc: "Transitioned to active high-frequency agent compile directives, achieving autonomous structural optimizations on 100% thread safety benchmarks.",
       status: "ZEXAN_CORE_ONLINE"
@@ -45,7 +45,7 @@ export default function AboutPage() {
   const parameters = [
     { label: "AGENCY OPERATING AGENT", value: "ZEXAN v3.5-ACTIVE" },
     { label: "DESIGN INTEL", value: "SWISS GEOMETRIC SYSTEM" },
-    { label: "CORE TYPOGRAPHY", value: "NEUE CORP DISPLAY // MONO_STABLE" },
+    { label: "CORE TYPOGRAPHY", value: "NEUE CORP DISPLAY - MONO_STABLE" },
     { label: "SHADOW BOUNDARY", value: "STRICT_ZERO_SHADOWS" },
     { label: "CORNER BENT PROFILE", value: "0PX_RECTANGULAR_ABSOLUTE" },
     { label: "ACCENT INTENSITY", value: "HIGH-CONTRAST NEON GREEN" },
@@ -58,7 +58,7 @@ export default function AboutPage() {
         
         {/* Header decoration */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ SYSTEM_RECORDS.04C // CORE_ABOUT ]</span>
+          <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ SYSTEM_RECORDS.04C - CORE_ABOUT ]</span>
           <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
         </div>
 
@@ -84,10 +84,10 @@ export default function AboutPage() {
                   : "bg-[#f1f1f1] text-[#181818] hover:bg-[#181818] hover:text-white border border-[#e5e5e5]"
               }`}
             >
-              {tab === "directives" && "01 // AGENT DIRECTIVES"}
-              {tab === "chronology" && "02 // CHRONOLOGICAL PATH"}
-              {tab === "matrix" && "03 // COHORT MATRIX"}
-              {tab === "manifesto" && "04 // ZEXAN MANIFESTO"}
+              {tab === "directives" && "01 - AGENT DIRECTIVES"}
+              {tab === "chronology" && "02 - CHRONOLOGICAL PATH"}
+              {tab === "matrix" && "03 - COHORT MATRIX"}
+              {tab === "manifesto" && "04 - ZEXAN MANIFESTO"}
             </button>
           ))}
         </div>
@@ -255,7 +255,7 @@ export default function AboutPage() {
                   &gt;&gt; IF A MODULE CANNOT RUN WITHOUT EXTERNAL API CALL COOLDOWNS, CACHE THE MODEL NATIVELY ON THE CLIENT ENTRUSTED DOMAINS. OFFLINE_FIRST SHOULD BE STANDARD, NOT A PREMIUM FEATURE.
                 </p>
                 <p className="text-[#94fa50] font-bold">
-                  &gt;&gt; [CONVENTION VERDICT]: RUN_READY // SYSTEM STATUS IS CONCURRENT_ACTIVE 
+                  &gt;&gt; [CONVENTION VERDICT]: RUN_READY - SYSTEM STATUS IS CONCURRENT_ACTIVE 
                 </p>
               </div>
             </div>
