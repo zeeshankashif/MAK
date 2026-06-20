@@ -204,7 +204,7 @@ export default function App() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#e5e5e5] pt-6">
                 <div className="flex items-center gap-2 font-mono text-[10px] text-[#8A8A8A] tracking-widest uppercase">
                   <Zap size={12} className="text-[#94fa50] animate-pulse" />
-                  STATION_READY - LATENCY: 12MS
+                  STATION READY - LATENCY: 12MS
                 </div>
                 <button
                   onClick={() => {

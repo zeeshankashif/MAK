@@ -37,7 +37,7 @@ export default function Capabilities({ onCapabilityClick }: CapabilitiesProps) {
         {/* ========================================================================= */}
         <div id="development" className="scroll-mt-24 mb-10">
           <div className="flex items-center gap-2 mb-3">
-            <span className="font-mono text-[10px] text-[#94fa50] tracking-[0.2em] uppercase font-bold">[ SYSTEM_VIEW.02 ]</span>
+            <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">02 SYSTEM VIEW</span>
             <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
           </div>
           <h2 className="font-sans text-3xl sm:text-5xl font-black tracking-tight text-[#181818] uppercase">
@@ -122,7 +122,7 @@ export default function Capabilities({ onCapabilityClick }: CapabilitiesProps) {
         {/* ========================================================================= */}
         <div id="marketing" className="scroll-mt-24 mb-24">
           <div className="flex items-center gap-2 mb-3">
-            <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ SYSTEM_VIEW.03 ]</span>
+            <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">03 SYSTEM VIEW</span>
             <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
           </div>
           
@@ -141,7 +141,7 @@ export default function Capabilities({ onCapabilityClick }: CapabilitiesProps) {
               <div className="bg-white border border-[#e5e5e5] p-5 flex gap-4 transition-colors hover:border-[#94fa50]">
                 <div className="text-[#94fa50] mt-1"><Target size={18} /></div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs tracking-tight text-[#181818] uppercase">FIRST-PARTY USER CONVERSION</h4>
+                  <h4 className="font-sans font-bold text-xs tracking-tight text-[#181818] uppercase">FIRST PARTY USER CONVERSION</h4>
                   <p className="font-sans text-[11px] text-zinc-500 uppercase mt-1">Direct server-side API integration bypasses standard customer browser script blocks entirely.</p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function Capabilities({ onCapabilityClick }: CapabilitiesProps) {
               <div className="bg-white border border-[#e5e5e5] p-5 flex gap-4 transition-colors hover:border-[#94fa50]">
                 <div className="text-[#94fa50] mt-1"><Mail size={18} /></div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs tracking-tight text-[#181818] uppercase">HIGH-REPUTATION RETENTION LOOPS</h4>
+                  <h4 className="font-sans font-bold text-xs tracking-tight text-[#181818] uppercase">HIGH REPUTATION RETENTION LOOPS</h4>
                   <p className="font-sans text-[11px] text-zinc-500 uppercase mt-1">We configure dedicated SMTP servers to route transaction-level lifecycles with near-perfect domain ratings.</p>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function Capabilities({ onCapabilityClick }: CapabilitiesProps) {
                 DRIVING <br className="hidden lg:block"/> REAL RESULTS
               </h3>
               <p className="font-mono text-[9px] text-[#94fa50] tracking-widest uppercase font-bold mt-2">
-                BENCHMARK METRIC SYSTEM_SEC.04
+                BENCHMARK METRIC SYSTEM SEC
               </p>
             </div>
 

@@ -39,7 +39,7 @@ export default function WhoWeAre() {
         
         {/* Section Header */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ VIEW.04 WHO WE ARE ]</span>
+          <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">04 WHO WE ARE</span>
           <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
         </div>
 
@@ -52,7 +52,7 @@ export default function WhoWeAre() {
             </h2>
           </div>
           <div className="lg:col-span-6 lg:col-start-7 lg:pl-6 border-l border-stone-300">
-            <p className="font-sans text-sm sm:text-base text-[#181818] leading-relaxed">
+            <p className="font-sans text-sm text-[#181818] max-w-xl mt-3 uppercase leading-relaxed font-semibold">
               At MAK Developers, our core mission is simple: strip away the corporate bloat and rebuild the web to be hyper-fast and highly transactional. We partner with next-generation enterprise startups and scale structures to formulate technical authority systems.
             </p>
             <div className="flex gap-4 items-center mt-6">
@@ -96,7 +96,7 @@ export default function WhoWeAre() {
               {/* Status bar */}
               <div className="border-t border-zinc-100 pt-3 mt-6 flex items-center gap-1.5 font-bold">
                 <span className="w-1.5 h-1.5 bg-[#94fa50] rounded-none inline-block"></span>
-                <span className="font-mono text-[9px] text-[#8A8A8A] tracking-widest">STABLE_MODULE_TRUE</span>
+                <span className="font-mono text-[9px] text-[#8A8A8A] tracking-widest">STABLE MODULE TRUE</span>
               </div>
             </div>
           ))}
@@ -107,7 +107,7 @@ export default function WhoWeAre() {
         {/* ========================================================================= */}
         <div className="border-t border-[#e5e5e5] pt-16" id="mak-divisions-block">
           <div className="flex items-center gap-2 mb-4">
-            <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ SYSTEM_RECORDS.04B ]</span>
+            <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">SYSTEM RECORDS</span>
             <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
           </div>
 
@@ -230,7 +230,7 @@ function DivisionMatrix() {
       {/* Details Display terminal screen */}
       <div className="lg:col-span-7 bg-[#181818] text-white p-8 border-2 border-black flex flex-col justify-between min-h-[380px] relative font-mono text-xs">
         <span className="absolute top-0 right-0 bg-[#94fa50] text-[#181818] font-mono text-[9px] py-1 px-3 tracking-widest font-black">
-          RECORD_FILE: {activeDiv.id}
+          RECORD FILE: {activeDiv.id}
         </span>
         <span className="absolute bottom-0 right-0 w-3 h-3 bg-[#94fa50]" />
 
@@ -267,8 +267,8 @@ function DivisionMatrix() {
 
         {/* Micro coordinate status footer of terminal */}
         <div className="border-t border-zinc-800 pt-4 mt-8 flex items-center justify-between text-[9px] text-zinc-500 uppercase">
-          <span>COORDINATE_THREAD: COMPLETE</span>
-          <span className="text-[#94fa50] font-bold">STATION REFERENCE: MAK_ZEXAN_ENGINE - OK</span>
+          <span>COORDINATE THREAD: COMPLETE</span>
+          <span className="text-[#94fa50] font-bold">STATION REFERENCE: MAK ZEXAN ENGINE - OK</span>
         </div>
       </div>
     </div>

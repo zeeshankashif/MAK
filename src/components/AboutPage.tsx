@@ -43,13 +43,13 @@ export default function AboutPage() {
   ];
 
   const parameters = [
-    { label: "AGENCY OPERATING AGENT", value: "ZEXAN v3.5-ACTIVE" },
+    { label: "AGENCY OPERATING AGENT", value: "3.5 ACTIVE" },
     { label: "DESIGN INTEL", value: "SWISS GEOMETRIC SYSTEM" },
-    { label: "CORE TYPOGRAPHY", value: "NEUE CORP DISPLAY - MONO_STABLE" },
-    { label: "SHADOW BOUNDARY", value: "STRICT_ZERO_SHADOWS" },
-    { label: "CORNER BENT PROFILE", value: "0PX_RECTANGULAR_ABSOLUTE" },
-    { label: "ACCENT INTENSITY", value: "HIGH-CONTRAST NEON GREEN" },
-    { label: "SUB-ACCENT MARKER", value: "SIGNAL RED (5% TARGET)" }
+    { label: "CORE TYPOGRAPHY", value: "NEUE CORP DISPLAY" },
+    { label: "SHADOW BOUNDARY", value: "STRICT ZERO SHADOWS" },
+    { label: "CORNER BENT PROFILE", value: "RECTANGULAR ABSOLUTE" },
+    { label: "ACCENT INTENSITY", value: "HIGH CONTRAST" },
+    { label: "SUB ACCENT MARKER", value: "SIGNAL RED" }
   ];
 
   return (
@@ -58,14 +58,14 @@ export default function AboutPage() {
         
         {/* Header decoration */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ SYSTEM_RECORDS.04C - CORE_ABOUT ]</span>
+          <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">SYSTEM RECORDS - CORE ABOUT</span>
           <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
         </div>
 
         {/* Title */}
         <div className="max-w-3xl mb-12">
           <h2 className="font-sans text-3xl sm:text-5xl font-black tracking-tight text-[#181818] uppercase">
-            ABOUT THE ZEXAN INTAKE
+            ABOUT US
           </h2>
           <p className="font-sans text-sm text-[#8A8A8A] max-w-xl mt-3 uppercase leading-relaxed font-semibold">
             MAK Developers operates under extreme design and performance constraints. Discover our structural chronology, agent parameters, and the official ZEXAN engineering directives.
@@ -100,12 +100,12 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start" id="directives-tab-pane">
               <div className="lg:col-span-5 space-y-6">
                 <div className="bg-[#f1f1f1] border border-[#e5e5e5] p-6 relative">
-                  <span className="absolute top-0 right-0 bg-[#FF3333] text-white font-mono text-[8px] py-0.5 px-2 tracking-widest">PROP_MATRIX</span>
+                  <span className="absolute top-0 right-0 bg-[#94fa50] text-black font-mono text-[8px] py-0.5 px-2 tracking-widest">PROP MATRIX</span>
                   <h4 className="font-sans font-black text-md text-[#181818] uppercase mb-4">MAK CORE VALUES</h4>
                   <ul className="space-y-3 font-sans text-xs text-[#8A8A8A] leading-relaxed uppercase">
                     <li className="flex items-start gap-2.5">
                       <span className="w-1.5 h-1.5 bg-[#94fa50] block mt-1"></span>
-                      <span>HIGH-DENSITY COMPACT CODE BASES WRITTEN IN PURE TYPESCRIPT</span>
+                      <span>HIGH DENSITY COMPACT CODE BASES WRITTEN IN PURE TYPESCRIPT</span>
                     </li>
                     <li className="flex items-start gap-2.5">
                       <span className="w-1.5 h-1.5 bg-[#94fa50] block mt-1"></span>
@@ -113,7 +113,7 @@ export default function AboutPage() {
                     </li>
                     <li className="flex items-start gap-2.5">
                       <span className="w-1.5 h-1.5 bg-[#94fa50] block mt-1"></span>
-                      <span>FIRST-PARTY DATA INGESTION DRIVEN BY EXTREME ON-EDGE SPEED</span>
+                      <span>FIRST-PARTY DATA INGESTION DRIVEN BY EXTREME ON EDGE SPEED</span>
                     </li>
                     <li className="flex items-start gap-2.5">
                       <span className="w-1.5 h-1.5 bg-[#94fa50] block mt-1"></span>
@@ -134,7 +134,7 @@ export default function AboutPage() {
               <div className="lg:col-span-7 bg-[#181818] text-white p-8 border-2 border-black font-mono text-xs">
                 <div className="flex items-center gap-2 mb-6 border-b border-zinc-800 pb-4">
                   <Shield size={14} className="text-[#94fa50]" />
-                  <span className="text-zinc-400 font-bold tracking-widest uppercase">ZEXAN_CORE_SYSTEM_SPEC</span>
+                  <span className="font-sans font-bold tracking-widest uppercase">ZEXAN CORE SYSTEM SPEC</span>
                 </div>
 
                 <div className="space-y-4">
@@ -149,7 +149,7 @@ export default function AboutPage() {
                 {/* Status Bar */}
                 <div className="mt-8 pt-4 border-t border-zinc-800 flex items-center justify-between text-[10px] text-zinc-500 uppercase">
                   <span>DEPLOYMENT SYSTEM: SECURED</span>
-                  <span className="text-[#94fa50] tracking-widest font-black uppercase">CORE_METRION_TRUE</span>
+                  <span className="text-[#94fa50] tracking-widest font-black uppercase">CORE METRION TRUE</span>
                 </div>
               </div>
             </div>
@@ -236,9 +236,9 @@ export default function AboutPage() {
               <div className="flex items-center justify-between border-b border-zinc-800 pb-4 mb-6 uppercase">
                 <div className="flex items-center gap-2">
                   <Terminal size={12} className="text-[#94fa50]" />
-                  <span className="text-white font-bold">ZEXAN_MANIFESTO.TXT</span>
+                  <span className="text-white font-bold">ZEXAN MANIFESTO.TXT</span>
                 </div>
-                <span className="text-zinc-500 bg-zinc-900 px-2 py-0.5 border border-zinc-800">[READ_ONLY]</span>
+                <span className="text-zinc-500 bg-zinc-900 px-2 py-0.5 border border-zinc-800">READ ONLY</span>
               </div>
 
               <div className="space-y-4 text-zinc-300 uppercase leading-relaxed max-w-4xl">
@@ -252,10 +252,10 @@ export default function AboutPage() {
                   &gt;&gt; THE SWISS MODERNISTS TAUGHT ACCLESIASTICAL TEXT POSITION ENFORCEMENT. WE PAIR THREAD STABILITY AND GEOMETRIC GRIDS SO THAT DESIGN DOES NOT DECORATE CONTENT; THE GRID BECOMES THE SYSTEM.
                 </p>
                 <p>
-                  &gt;&gt; IF A MODULE CANNOT RUN WITHOUT EXTERNAL API CALL COOLDOWNS, CACHE THE MODEL NATIVELY ON THE CLIENT ENTRUSTED DOMAINS. OFFLINE_FIRST SHOULD BE STANDARD, NOT A PREMIUM FEATURE.
+                  &gt;&gt; IF A MODULE CANNOT RUN WITHOUT EXTERNAL API CALL COOLDOWNS, CACHE THE MODEL NATIVELY ON THE CLIENT ENTRUSTED DOMAINS. OFFLINE FIRST SHOULD BE STANDARD, NOT A PREMIUM FEATURE.
                 </p>
                 <p className="text-[#94fa50] font-bold">
-                  &gt;&gt; [CONVENTION VERDICT]: RUN_READY - SYSTEM STATUS IS CONCURRENT_ACTIVE 
+                  &gt;&gt; CONVENTION VERDICT: RUN READY - SYSTEM STATUS IS CONCURRENT ACTIVE 
                 </p>
               </div>
             </div>

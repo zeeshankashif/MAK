@@ -17,7 +17,7 @@ export default function Footer({ onNavigate }: FooterProps) {
       <div className="border-b border-zinc-800 py-8 px-6" id="foot-trust-banner">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="font-sans font-black tracking-wider text-sm text-[#8A8A8A] uppercase">
-            A PARTNER, <span className="text-white">NOT A VENDOR.</span>
+            A PARTNER , <span className="text-white">NOT A VENDOR.</span>
           </div>
 
           {/* Monochrome partner badges */}
@@ -53,9 +53,9 @@ export default function Footer({ onNavigate }: FooterProps) {
 
           {/* Micro structural system node */}
           <div className="mt-4 p-4 border border-zinc-800 bg-zinc-900/30 max-w-xs font-mono text-[9px] text-zinc-500 uppercase tracking-widest leading-normal">
-            IP_EGRESS: STABLE - SHUNT_SYS: LIVE
+            IP EGRESS: STABLE - SHUNT SYS: LIVE
             <br />
-            VERSION: 2026.06.MAK - PLATFORM: CLOUD_RUN
+            VERSION: 2026 MAK - PLATFORM: CLOUD RUN
           </div>
         </div>
 
@@ -116,7 +116,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           
           <div className="font-mono text-[9px] text-zinc-500 uppercase tracking-wider">
-            © 2026 MAK DEVELOPERS INC. ALL RIGHTS RESERVED. (STATION ID: ZEXAN)
+            © 2026 MAK DEVELOPERS INC. ALL RIGHTS RESERVED. STATION ID: ZEXAN
           </div>
 
           <div className="flex gap-6 font-mono text-[9px] text-zinc-500 uppercase tracking-wider">

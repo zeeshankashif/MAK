@@ -128,7 +128,7 @@ export default function ExtendedData() {
         {/* ================= SECTION 1: DETAILED CASE STUDIES ================= */}
         <div id="projects" className="scroll-mt-24 mb-20">
           <div className="flex items-center gap-2 mb-4">
-            <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ SYSTEM_RECORDS.04 ]</span>
+            <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">04 SYSTEM RECORDS</span>
             <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
           </div>
           
@@ -209,13 +209,13 @@ export default function ExtendedData() {
 
         {/* ================= SECTION 2: INTERACTIVE TECH STACK GRID ================= */}
         <div id="tech-stack" className="scroll-mt-24 mb-20 bg-[#181818] text-white p-8 sm:p-12 border-2 border-black relative">
-          <span className="absolute top-0 right-0 bg-[#FF3333] text-white font-mono text-[9px] py-1 px-3 tracking-widest font-bold">
+          <span className="absolute top-0 right-0 bg-[#94fa50] text-[#181818] font-mono text-[9px] py-1 px-3 tracking-widest font-bold">
             INTELLIGENT COMPONENT METRIC
           </span>
           <span className="absolute bottom-0 left-0 w-4 h-4 bg-[#94fa50]" />
 
           <div className="flex items-center gap-2 mb-6">
-            <span className="font-mono text-[10px] text-[#94fa50] tracking-[0.2em] uppercase font-bold">[ CORE_ENGINE.05 ]</span>
+            <span className="font-sans text-[12px] text-[#94fa50] tracking-[0.2em] uppercase font-bold">05 CORE ENGINE</span>
             <span className="h-[1px] bg-zinc-800 flex-grow"></span>
           </div>
 
@@ -274,7 +274,7 @@ export default function ExtendedData() {
                   </div>
                   <div className="border-t border-zinc-800/60 pt-3 mt-4 flex items-center gap-1.5 font-mono text-[80%] text-zinc-600 uppercase select-none">
                     <Check size={8} className="text-[#94fa50]" />
-                    SYS_STABLE_VERIFIED
+                    SYS STABLE VERIFIED
                   </div>
                 </div>
               ))}
@@ -285,7 +285,7 @@ export default function ExtendedData() {
         {/* ================= SECTION 3: PROTOCOLS ACCORDION SYSTEM ================= */}
         <div id="protocols" className="scroll-mt-24">
           <div className="flex items-center gap-2 mb-4">
-            <span className="font-mono text-[10px] text-[#FF3333] tracking-[0.2em] uppercase font-bold">[ TECHNICAL_MEMORANDUM.06 ]</span>
+            <span className="font-sans text-[12px] text-[#181818] tracking-[0.2em] uppercase font-bold">06 TECHNICAL MEMORANDUM</span>
             <span className="h-[1px] bg-[#e5e5e5] flex-grow"></span>
           </div>
 
@@ -344,7 +344,7 @@ export default function ExtendedData() {
                           </p>
                           <div className="flex items-center gap-3 font-mono text-[9px] text-[#FF3333] tracking-widest font-bold">
                             <GitBranch size={10} />
-                            STATION_COORD - METRIC: 100% STABLE INTEGRITY
+                            STATION COORD - METRIC: 100% STABLE INTEGRITY
                           </div>
                         </div>
                       </motion.div>
